@@ -1,7 +1,12 @@
+// program for selection sort and find the time taken in sorting 
+// Author name - Jashu Bhardwaj
+// Date : 31/07/2021
+
 #include <stdio.h>
 #include<sys/time.h>
 #include<stdlib.h>
 
+// function for swapping the two numbers
 void swap(int arr[], int i, int j) {
     int temp = 0;
     temp = arr[i];
@@ -9,6 +14,7 @@ void swap(int arr[], int i, int j) {
     arr[j] = temp;
 }
 
+// function for sorting using selection sort
 void selection_sort(int arr[], int n) {
     
     
@@ -28,6 +34,7 @@ void selection_sort(int arr[], int n) {
     }
 }
 
+// function for generating inputs in random order
 void random_inputs(int arr[], int n) {
     
     for(int i = 0; i < n; i++) {
@@ -94,7 +101,7 @@ void reverse_inputs(int arr[], int n) {
     printf("Time Taken for sorting reversed %d elements is : %ld\n", n, endtime - starttime);
     
 }
-
+// main function
 int main()
 {
     int n = 0 ;
